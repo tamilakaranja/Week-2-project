@@ -3,6 +3,7 @@
 :root {
     --primary: #9b5de5;
     --pink: #f15bb5;
+    --dark-pink: #d83b99;
     --dark-purple: #190f2c;
     --purple: #241334;
     --white: #ffffff;
@@ -170,4 +171,19 @@ margin-bottom: 30px;
     font-size: 18px;
 
     margin-bottom: 35px;
+}
+
+.hero-button {
+    display: inline-block;
+padding: 15px 30px;
+
+    background-color: var(--dark-pink);
+
+    color: var(--white);
+
+    font-weight: 700;
+
+    border-radius: 30px;
+
+    transition: var(--transition);
 }
