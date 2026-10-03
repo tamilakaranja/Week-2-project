@@ -96,3 +96,26 @@ select {
 .nav-links a:hover {
     color: var(--pink);
 }
+
+/* CART */
+
+.cart-button {
+    border: 3px solid var(--pink);
+
+    padding: 10px 10px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    transition: var(--transition);
+}
+
+
+.cart-button:hover {
+    background-color: var(--pink);
+    color: var(--white);
+
+    transform: translateY(-2px);
+}
+
