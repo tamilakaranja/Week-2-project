@@ -162,3 +162,12 @@ margin-bottom: 30px;
     color: var(--pink);
 }
 
+.hero-description {
+    max-width: 550px;
+
+    color: #ddd5e3;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+}
