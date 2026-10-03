@@ -77,3 +77,22 @@ select {
 .logo:hover {
     color: var(--pink);
 }
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+
+.nav-links a:hover {
+    color: var(--pink);
+}
