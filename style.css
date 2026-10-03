@@ -3,7 +3,7 @@
 :root {
     --primary: #9b5de5;
     --pink: #f15bb5;
-    --dark-purple: #120b1f;
+    --dark-purple: #190f2c;
     --purple: #241334;
     --white: #ffffff;
     --light: #f8f5fa;
@@ -47,3 +47,19 @@ select {
     
 }
 
+/* navigation  */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background-color: var(--dark-purple);
+    color: var(--white);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
