@@ -138,3 +138,6 @@ select {
     color: var(--white);
 }
 
+.hero-content {
+    max-width: 750px;
+}
