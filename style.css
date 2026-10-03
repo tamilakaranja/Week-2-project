@@ -9,6 +9,7 @@
     --light: #f8f5fa;
     --text: #211b26;
     --gray: #77717d;
+      --light-purple: #251741;
      --spacing-small: 10px;
     --spacing-medium: 20px;
     --spacing-large: 40px;
@@ -117,5 +118,23 @@ select {
     color: var(--white);
 
     transform: translateY(-2px);
+}
+/* hero section  */
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: var(--spacing-xl) 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--light-purple),
+            var(--purple)
+        );
+
+    color: var(--white);
 }
 
