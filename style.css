@@ -141,3 +141,12 @@ select {
 .hero-content {
     max-width: 750px;
 }
+
+.hero-label {
+    color: var(--pink);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+ margin-bottom: 20px;
+ transition: var(--transition);
+}
