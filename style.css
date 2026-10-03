@@ -63,3 +63,17 @@ select {
     top: 0;
     z-index: 1000;
 }
+/* LOGO */
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 4px;
+
+    color: var(--white);
+
+    transition: var(--transition);
+}
+.logo:hover {
+    color: var(--pink);
+}
