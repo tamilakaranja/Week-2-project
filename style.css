@@ -1,0 +1,20 @@
+/* basic styling  */
+/* color pallete  */
+:root {
+    --primary: #9b5de5;
+    --pink: #f15bb5;
+    --dark-purple: #120b1f;
+    --purple: #241334;
+    --white: #ffffff;
+    --light: #f8f5fa;
+    --text: #211b26;
+    --gray: #77717d;
+     --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+    --spacing-xl: 80px;
+  --border-radius: 12px;
+    --transition: 0.3s ease;
+}
+
+
