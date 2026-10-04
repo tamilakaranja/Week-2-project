@@ -839,7 +839,10 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 /* DARK MODE COLORS */
-
+.dark-mode-button, .cart-button{
+    display: inline-block;
+    margin: 20px;
+}
 body:has(#dark-mode-toggle:checked) {
     background-color: #0d0914;
     color: #f8f5fa;
