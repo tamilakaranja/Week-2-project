@@ -189,6 +189,44 @@ padding: 15px 30px;
 }
 .hero-button:hover {
     background-color: var(--primary);
- transform: translatex(-4px);
+ transform: translate(-4px);
 box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Section */
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+
+.section-heading p,
+.section-label {
+    color: var(--primary);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+
+.section-heading h2 {
+    font-size: clamp(32px, 5vw, 55px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+
+.section-description {
+    color: var(--gray);
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
 }
