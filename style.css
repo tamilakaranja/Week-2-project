@@ -438,7 +438,7 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 /* Add to Cart Button */
 
 .add-cart {
-    display: flex;
+    display:inline-block;
     width: 100%;
     padding: 12px;
     text-align: center;
@@ -453,4 +453,141 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 .add-cart:hover {
     background-color: var(--dark-purple);
     color: var(--white);
+}
+ /* product detail modal  */
+
+.product-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(18, 11, 31, 0.85);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    z-index: 3000;
+}
+
+/* Show the modal when its ID is targeted */
+
+.product-modal:target {
+    display: flex;
+}
+
+/* Modal box */
+
+.modal-content {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 900px;
+    max-width: 100%;
+
+    max-height: 90vh;
+    overflow: auto;
+
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal image */
+
+.modal-image {
+    min-height: 500px;
+    background-color: #eee8f0;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Modal information */
+
+.modal-info {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-info h2 {
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.modal-price {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.modal-info > p:not(.product-category):not(.modal-price) {
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+/* Close button */
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--white);
+    color: var(--dark-purple);
+
+    border-radius: 50%;
+
+    font-size: 28px;
+    line-height: 1;
+
+    z-index: 2;
+
+    transition: var(--transition);
+}
+
+.modal-close:hover {
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+/* Modal add-to-cart button */
+
+.modal-cart-button {
+    display: inline-block;
+    width: 100%;
+
+    padding: 15px;
+
+    text-align: center;
+
+    background-color: var(--dark-purple);
+    color: var(--white);
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: var(--transition);
+}
+
+.modal-cart-button:hover {
+    background-color: var(--pink);
+    transform: translateY(-2px);
 }
