@@ -631,9 +631,7 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     line-height: 1.7;
 }
 
-/* =========================
-   SHOPPING CART
-========================= */
+/* shopping cart  */
 
 .cart-sidebar {
     padding: var(--spacing-xl) 7%;
@@ -751,4 +749,57 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     background-color: var(--pink);
     transform: translateY(-3px);
 }
+/* footer  */
 
+.footer {
+    padding: 50px 7% 20px;
+    background-color: var(--dark-purple);
+    color: var(--white);
+}
+
+/* Footer brand */
+
+.footer-brand {
+    margin-bottom: 30px;
+}
+
+.footer-brand h2 {
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+.footer-brand p {
+    color: #ddd5e3;
+    font-size: 14px;
+}
+
+/* Footer links */
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--pink);
+}
+
+/* Footer bottom */
+
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    color: var(--lightgray);
+    font-size: 13px;
+}
