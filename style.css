@@ -8,6 +8,7 @@
     --purple: #241334;
     --white: #ffffff;
     --light: #f8f5fa;
+  --light-purplebg:#e2c9f3;
     --text: #211b26;
     --gray: #77717d;
       --light-purple: #251741;
@@ -28,7 +29,7 @@ html {
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--light);
+    background-color: var(--light-purplebg);
     color: var(--text);
     line-height: 1.6;
 }
