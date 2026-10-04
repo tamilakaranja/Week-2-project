@@ -19,6 +19,11 @@
     --spacing-xl: 80px;
   --border-radius: 12px;
     --transition: 0.3s ease;
+    /* dark mode  */
+    --dark-bg: #0d0914;
+--dark-card: #190f2c;
+--dark-text: #f8f5fa;
+--dark-gray: #b9b1c2;
 }
 * {
     margin: 0;
@@ -594,9 +599,6 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 
 /* about section  */
 
-/* =========================
-   ABOUT SECTION
-========================= */
 
 .about {
     padding: var(--spacing-xl) 7%;
@@ -803,9 +805,100 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     color: var(--lightgray);
     font-size: 13px;
 }
+/* DARK MODE  */
 
 
+#dark-mode-toggle {
+    display: none;
+}
 
+/* Dark mode button */
+/* =========================
+   DARK MODE
+========================= */
+
+/* Hide checkbox */
+#dark-mode-toggle {
+    display: none;
+}
+
+/* Dark mode button */
+.dark-mode-button {
+    padding: 10px 15px;
+    border: 1px solid var(--pink);
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dark-mode-button:hover {
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+/* DARK MODE COLORS */
+
+body:has(#dark-mode-toggle:checked) {
+    background-color: #0d0914;
+    color: #f8f5fa;
+}
+
+body:has(#dark-mode-toggle:checked) .navbar {
+    background-color: #09070d;
+}
+
+body:has(#dark-mode-toggle:checked) .categories {
+    background-color: #0d0914;
+}
+
+body:has(#dark-mode-toggle:checked) .new-arrivals {
+    background-color: #120c1b;
+}
+
+body:has(#dark-mode-toggle:checked) .products-section {
+    background-color: #0d0914;
+}
+
+body:has(#dark-mode-toggle:checked) .product-card {
+    background-color: #190f2c;
+    color: #f8f5fa;
+    border-color: #302342;
+}
+
+body:has(#dark-mode-toggle:checked) .product-info h3,
+body:has(#dark-mode-toggle:checked) .price {
+    color: #f8f5fa;
+}
+
+body:has(#dark-mode-toggle:checked) .shop-controls {
+    background-color: #190f2c;
+}
+
+body:has(#dark-mode-toggle:checked) .filter-control select,
+body:has(#dark-mode-toggle:checked) .sort-control select {
+    background-color: #241334;
+    color: #f8f5fa;
+}
+
+body:has(#dark-mode-toggle:checked) .about {
+    background-color: #09070d;
+}
+
+body:has(#dark-mode-toggle:checked) .cart-section {
+    background-color: #0d0914;
+    color: #f8f5fa;
+}
+
+body:has(#dark-mode-toggle:checked) .cart-item {
+    background-color: #190f2c;
+    border-color: #302342;
+}
+
+body:has(#dark-mode-toggle:checked) .footer {
+    background-color: #050408;
+}
 /* responsive design  */
 
 @media (max-width: 768px) {
