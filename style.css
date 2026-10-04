@@ -803,3 +803,212 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     color: var(--lightgray);
     font-size: 13px;
 }
+
+
+
+/* responsive design  */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-actions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+       /* HERO */
+    .hero {
+        min-height: 80vh;
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: clamp(45px, 12vw, 80px);
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    /* CATEGORIES */
+    .categories {
+        padding: 60px 5%;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .category-card {
+        min-height: 250px;
+    }
+
+    /* NEW ARRIVALS */
+    .new-arrivals {
+        padding: 60px 5%;
+    }
+
+    .new-arrivals-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .new-arrivals-grid img {
+        height: 400px;
+    }
+
+    /* SHOP */
+    .products-section {
+        padding: 60px 5%;
+    }
+
+    .shop-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-control,
+    .sort-control {
+        width: 100%;
+    }
+
+    .filter-control select,
+    .sort-control select {
+        width: 100%;
+    }
+
+    .product-showcase {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+
+    /* ABOUT */
+    .about {
+        padding: 60px 5%;
+    }
+
+    .about-content h2 {
+        font-size: clamp(40px, 11vw, 70px);
+    }
+
+    .about-content > p:last-child {
+        font-size: 16px;
+    }
+
+    /* CART */
+    .cart-section {
+        padding: 60px 5%;
+    }
+
+    /* MODAL */
+    .modal-content {
+        grid-template-columns: 1fr;
+        max-height: 90vh;
+    }
+
+    .modal-image {
+        min-height: 300px;
+        max-height: 350px;
+    }
+
+    .modal-info {
+        padding: 30px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 50px 5% 20px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+
+/* for the small phones  */
+
+@media (max-width: 480px) {
+
+    /* NAVBAR */
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    /* HERO */
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    /* CATEGORIES */
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        min-height: 220px;
+    }
+
+    /* PRODUCTS */
+    .product-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 400px;
+    }
+
+    /* NEW ARRIVALS */
+    .new-arrivals-grid img {
+        height: 350px;
+    }
+
+    /* MODAL */
+    .modal-info {
+        padding: 25px;
+    }
+
+    .modal-info h2 {
+        font-size: 30px;
+    }
+
+    .modal-image {
+        min-height: 250px;
+    }
+}
