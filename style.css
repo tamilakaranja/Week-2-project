@@ -320,3 +320,36 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 
     opacity: 0.8;
 }
+/* new arrivals  */
+
+.new-arrivals {
+    padding: var(--spacing-xl) 7%;
+
+}
+
+
+.new-arrivals .section-heading {
+    margin-bottom: 15px;
+}
+
+.new-arrivals .section-description {
+    margin-bottom: 40px;
+
+    /* images section  */
+
+.new-arrivals > img {
+    width: 100%;
+    max-width: 350px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Hover effect */
+.new-arrivals > img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(18, 11, 31, 0.15);
+}
