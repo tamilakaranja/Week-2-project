@@ -920,6 +920,9 @@ body:has(#dark-mode-toggle:checked) .cart-total p {
 body:has(#dark-mode-toggle:checked) .cart-total strong {
     color: var(--dark-purple);
 }
+body:has(#dark-mode-toggle:checked) .add-cart {
+    color: var(--white); }
+
 /* responsive design  */
 
 @media (max-width: 768px) {
